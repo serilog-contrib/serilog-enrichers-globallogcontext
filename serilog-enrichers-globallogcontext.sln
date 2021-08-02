@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F07477D-F01B-488D-91E6-3378AEB6FDFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4F82E83B-D515-4CB4-AF3A-C9F2AE1ABB27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{7582B42B-F938-4597-9584-90DBE740EE7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleSample", "sample\ConsoleSample\ConsoleSample.csproj", "{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{C4E14FD5-D29D-43F6-B60D-3ED7F09C3DE9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.cake = build.cake
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		cake.config = cake.config
+		CHANGES.md = CHANGES.md
+		CODEOWNERS = CODEOWNERS
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.GlobalLogContext", "src\Serilog.Enrichers.GlobalLogContext\Serilog.Enrichers.GlobalLogContext.csproj", "{11508E91-6A43-41CB-9F2E-4B81C1A103D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Enrichers.GlobalLogContext.Tests", "test\Serilog.Enrichers.GlobalLogContext.Tests\Serilog.Enrichers.GlobalLogContext.Tests.csproj", "{766D4CC3-C4FF-4151-819A-75BCF54D7BAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{5D1321D4-F4E7-4BD3-99CE-C6025C0169C8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\dependabot.yml = .github\dependabot.yml
+		.github\FUNDING.yml = .github\FUNDING.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{D9A2B90B-2BFE-4B49-9221-22923F9CBE78}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\dependabot-cake.yml = .github\workflows\dependabot-cake.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11508E91-6A43-41CB-9F2E-4B81C1A103D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11508E91-6A43-41CB-9F2E-4B81C1A103D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11508E91-6A43-41CB-9F2E-4B81C1A103D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11508E91-6A43-41CB-9F2E-4B81C1A103D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766D4CC3-C4FF-4151-819A-75BCF54D7BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766D4CC3-C4FF-4151-819A-75BCF54D7BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766D4CC3-C4FF-4151-819A-75BCF54D7BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766D4CC3-C4FF-4151-819A-75BCF54D7BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF448ED2-74AA-4EA9-A2FA-EF7EFFB19B18} = {7582B42B-F938-4597-9584-90DBE740EE7C}
+		{11508E91-6A43-41CB-9F2E-4B81C1A103D1} = {3F07477D-F01B-488D-91E6-3378AEB6FDFC}
+		{766D4CC3-C4FF-4151-819A-75BCF54D7BAA} = {4F82E83B-D515-4CB4-AF3A-C9F2AE1ABB27}
+		{5D1321D4-F4E7-4BD3-99CE-C6025C0169C8} = {C4E14FD5-D29D-43F6-B60D-3ED7F09C3DE9}
+		{D9A2B90B-2BFE-4B49-9221-22923F9CBE78} = {5D1321D4-F4E7-4BD3-99CE-C6025C0169C8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0F08AD6-9632-4B75-949D-87EBCB4B115A}
+	EndGlobalSection
+EndGlobal
