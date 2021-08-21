@@ -1,1 +1,1 @@
-See: https://github.com/augustoproiete/serilog-enrichers-globallogcontext/releases
+See: https://github.com/serilog-contrib/serilog-enrichers-globallogcontext/releases

@@ -60,7 +60,7 @@ Task("pack")
     .IsDependentOn("test")
     .Does(() =>
 {
-    var releaseNotes = $"https://github.com/augustoproiete/serilog-enrichers-globallogcontext/releases/tag/v{buildVersion.Version}";
+    var releaseNotes = $"https://github.com/serilog-contrib/serilog-enrichers-globallogcontext/releases/tag/v{buildVersion.Version}";
 
     DotNetCorePack("./src/Serilog.Enrichers.GlobalLogContext/Serilog.Enrichers.GlobalLogContext.csproj", new DotNetCorePackSettings
     {

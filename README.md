@@ -131,7 +131,7 @@ As you can see, the main difference is that `Serilog.Enrichers.GlobalLogContext`
 
 ## Release History
 
-Click on the [Releases](https://github.com/augustoproiete/Serilog.Enrichers.GlobalLogContext/releases) tab on GitHub.
+Click on the [Releases](https://github.com/serilog-contrib/serilog-enrichers-globallogcontext/releases) tab on GitHub.
 
 ---
 

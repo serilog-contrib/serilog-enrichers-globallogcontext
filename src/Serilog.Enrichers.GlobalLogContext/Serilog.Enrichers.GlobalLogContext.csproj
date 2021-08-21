@@ -34,14 +34,14 @@
     <Company>augustoproiete.net</Company>
     <Description>A Serilog Enricher for adding properties to all log events in your app.</Description>
     <Copyright>Copyright 2021 C. Augusto Proiete &amp; Contributors - Provided under the Apache License, Version 2.0</Copyright>
-    <PackageTags>serilog;enricher;enrichers;globallogcontext;global-log-context;globalcontext;global-context;logcontext;log-context;augustoproiete;augusto-proiete</PackageTags>
+    <PackageTags>serilog;enricher;enrichers;globallogcontext;global-log-context;globalcontext;global-context;logcontext;log-context;serilog-enricher;serilog-contrib;augustoproiete;augusto-proiete</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageIcon>images\icon.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/augustoproiete/serilog-enrichers-globallogcontext/master/assets/serilog-enrichers-globallogcontext-nuget.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/augustoproiete/serilog-enrichers-globallogcontext</PackageProjectUrl>
-    <PackageReleaseNotes>https://github.com/augustoproiete/serilog-enrichers-globallogcontext/releases</PackageReleaseNotes>
+    <PackageIconUrl>https://raw.githubusercontent.com/serilog-contrib/serilog-enrichers-globallogcontext/master/assets/serilog-enrichers-globallogcontext-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/serilog-contrib/serilog-enrichers-globallogcontext</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/serilog-contrib/serilog-enrichers-globallogcontext/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/augustoproiete/serilog-enrichers-globallogcontext.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/serilog-contrib/serilog-enrichers-globallogcontext.git</RepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>
