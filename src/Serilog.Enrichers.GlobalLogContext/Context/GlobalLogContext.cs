@@ -23,17 +23,55 @@ using Serilog.Events;
 
 namespace Serilog.Context
 {
+    /// <summary>
+    /// Holds global properties that can be attached to log events. To
+    /// configure, use the <see cref="LoggerEnrichmentConfigurationExtensions.FromGlobalLogContext(Configuration.LoggerEnrichmentConfiguration)" /> method.
+    /// </summary>
+    /// <example>
+    /// Configuration:
+    /// <code lang="C#">
+    /// Log.Logger = new LoggerConfiguration()
+    ///     .Enrich.FromGlobalLogContext()
+    ///     // ... other configuration ...
+    ///     .CreateLogger();
+    /// </code>
+    /// Usage:
+    /// <code lang="C#">
+    /// GlobalLogContext.PushProperty("AppVersion", buildInfo.Version);
+    /// 
+    /// Log.Information("The AppVersion property will be attached to this event and all others following");
+    /// Log.Warning("The AppVersion property will also be attached to this event and all others following");
+    /// </code>
+    /// </example>
+    /// <remarks>
+    /// The scope of the context is global to the application and is
+    /// shared between all threads.
+    /// </remarks>
     public static class GlobalLogContext
     {
         private static readonly SemaphoreSlim _semaphoreSlim = new SemaphoreSlim(1, 1);
         private static ImmutableStack<ILogEventEnricher> _data;
 
+        /// <summary>
+        /// Acquires an exclusive lock on the global log context.
+        /// </summary>
+        /// <returns>
+        /// A token that can be disposed, in order to release
+        /// the exclusive lock on the global log context.
+        /// </returns>
         public static IDisposable Lock()
         {
             _semaphoreSlim.Wait();
             return new ContextLock();
         }
 
+        /// <summary>
+        /// Acquires an exclusive lock on the global log context, asynchronously.
+        /// </summary>
+        /// <returns>
+        /// A token that can be disposed, in order to release
+        /// the exclusive lock on the global log context.
+        /// </returns>
         public static async Task<IDisposable> LockAsync()
         {
             await _semaphoreSlim.WaitAsync().ConfigureAwait(false);

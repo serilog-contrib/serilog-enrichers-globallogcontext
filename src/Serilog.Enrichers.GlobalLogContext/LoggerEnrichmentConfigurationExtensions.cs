@@ -20,10 +20,13 @@ using Serilog.Enrichers.GlobalLogContext;
 
 namespace Serilog
 {
+    /// <summary>
+    /// Extends <see cref="LoggerEnrichmentConfiguration"/> with global enrichment methods.
+    /// </summary>
     public static class LoggerEnrichmentConfigurationExtensions
     {
         /// <summary>
-        /// Enrich log events with properties from <see cref="GlobalLogContext"/>.
+        /// Enrich log events with properties from <see cref="Context.GlobalLogContext"/>.
         /// </summary>
         /// <returns>Configuration object allowing method chaining.</returns>
         /// <exception cref="ArgumentNullException"></exception>
