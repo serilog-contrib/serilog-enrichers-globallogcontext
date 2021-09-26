@@ -57,4 +57,4 @@ jobs:
         with:
           if-no-files-found: warn
           name: package
-          path: artifacts/nuget/**/*
+          path: artifact/nuget/**/*
