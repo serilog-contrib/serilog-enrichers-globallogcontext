@@ -7,6 +7,16 @@ updates:
     target-branch: "master"
     ignore:
       - dependency-name: "Serilog"
+  - package-ecosystem: "nuget"
+    directory: "/test"
+    schedule:
+      interval: "daily"
+    target-branch: "master"
+  - package-ecosystem: "nuget"
+    directory: "/sample"
+    schedule:
+      interval: "daily"
+    target-branch: "master"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
