@@ -135,4 +135,4 @@ Click on the [Releases](https://github.com/serilog-contrib/serilog-enrichers-glo
 
 ---
 
-_Copyright &copy; 2021 C. Augusto Proiete & Contributors - Provided under the [Apache License, Version 2.0](LICENSE)._
+_Copyright &copy; 2021-2022 C. Augusto Proiete & Contributors - Provided under the [Apache License, Version 2.0](LICENSE)._
